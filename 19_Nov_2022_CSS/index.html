@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        .container {
+            border: 2px solid indigo;
+            height: 1500px;
+        }
+
+        .pos {
+            background-color: purple;
+            color: aliceblue;
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            border: 2px solid #be7373;
+            border-radius: 7px;
+            display: inline-block;
+        }
+
+        #three {
+            /* position: relative; */
+            /* position: absolute; */
+            position: sticky;
+            /* position: fixed; */
+            top: 10px;
+            /* right: 100px; */
+            /* left: 50px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="pos">One</div>
+        <div class="pos">Two</div>
+        <div class="pos" id="three">Three</div>
+        <div class="pos">Four</div>
+    </div>
+
+</body>
+
+</html>

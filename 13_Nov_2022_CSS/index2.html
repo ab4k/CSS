@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different states of links</title>
+    <style>
+        a:hover {
+            color: rgb(33, 196, 0);
+        }
+
+        a:visited {
+            color: cyan;
+        }
+
+        a:link {
+            color: orangered;
+        }
+
+        /* focus attribute  */
+        input:focus {
+            background-color: #808080;
+            color: greenyellow;
+        }
+
+        /* li:nth-child(3n) {
+            background-color: #45ffad;
+            border: 2px dotted #00ff00;
+        } */
+
+        li:first-child {
+            color: red;
+        }
+
+        li:last-child {
+            background-color: purple;
+            color: white;
+        }
+
+        /* Padding & Margin*/
+
+        .container {
+            border: 2px solid olive;
+            background-color: #00ff12;
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+            height: 100px;
+        }
+
+        .container:hover {
+            background-color: aqua;
+            color: black;
+        }
+
+        li {
+            list-style-type: lower-alpha;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="#">Google</a> <br>
+
+    <p>Name: </p>
+    <input type="text" name="name" id="name"> <br>
+    <p>Password: </p>
+    <input type="password" focus> <br>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+        <li style="background: pink;">Ten</li>
+    </ul>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet adipisicing elit. Aliquam nobis unde possimus nihil cupiditate sit</p>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique iste in eum? Possimus expedita, recusandae
+        voluptatem voluptatibus, rerum minus magni obcaecati cum minima numquam laboriosam dolore dignissimos qui hic
+        nulla est pariatur eaque, iste maxime?
+    </p>
+</body>
+
+</html>

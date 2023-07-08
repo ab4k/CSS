@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Basics Assignment</title>
+</head>
+
+<body>
+    <h2> <span class="question">Q.</span> Write a detailed article on css selectors, pseudo selectors and their uses
+        with example.
+        <!-- <ul>
+            <li>Universal Selector</li>
+            <li>Individual Selectors</li>
+            <li>Class and Id Selector</li>
+            <li>And Selector (Chained)</li>
+            <li>Inside an element</li>
+            <li>Direct Child</li>
+        </ul>
+        Pseudo Selectors
+        <ul>
+            <li>::before</li>
+            <li>::after</li>
+        </ul> -->
+    </h2>
+    <h3> <span class="answer">A.</span> CSS Selectors are addresses of the targets which we have to style using css
+        properties. </h3>
+    <h2 class="subheading-text">Universal Selector</h2>
+    <p>There are various ways to select the html elements, so we can style the elements as per our requirement. We can
+        select the html elements using individual selctors like the tag names, h1, p, div, span, etc. In this case all
+        the elements having the same tag will get selected and the style will be applied. If we want to select the
+        entire html we can use universal selector, to select the entire page at a time we have to use * (asterisk). The
+        universal selector is mostly used for the resetting of default browser styling. Here is the example of css
+        universal selector:</p>
+
+    <div class="white-border">
+
+        <img src="images/universal_selector.png" alt="Code snippet">
+        <p>Output :</p>
+        <img id="output" src="images/output_uni_selector.png" alt="Output of the code snippet">
+    </div>
+
+
+    <h2 class="subheading-text">Individual Selector</h2>
+    <p>Individually the html elements can be selected by tags, classes, ids etc. Classes can be used multiple times
+        on a
+        webpage for applying same style on multiple similar elements but, ids can be used only once each page. Ids
+        has
+        more preference over classes.</p>
+
+    <p class="red" id="blue">Red or Blue</p>
+
+    <p>The class of above paragraph is red, and id of blue, according to preference the color as per id is applied,
+        so
+        the text shown is of blue color.</p>
+
+    <img src="images/class_id_preference.png" alt="Code Snippet having class and id">
+
+    <p>Class Selector Styling:</p>
+
+    <img src="images/class_selector.png" alt="class Selector code snippet">
+
+    <p>Id Selector Styling:</p>
+    <img src="images/id_selector.png" alt="id Selector code snippet">
+
+    <h2 class="subheading-text">And Selector</h2>
+
+    <p>And selector acts just like the AND logic, it will work only when both the selectors present in the html
+        element.
+        In example below, the first sentence having both class yellow and underlined, so the css must have both the
+        class
+        selectors to select the first sentence.</p>
+
+    <div class="white-border">
+
+        <p>Styling:</p>
+
+        <img src="images/AND_selector_output_1.png">
+
+        <p>Output:</p>
+
+        <div class="yellow underlined-text">First Sentence: This sentence is yellow and underlined.</div>
+
+        <p>If we will use only yellow class selector then the second sentence will be selected but not first.</p>
+
+        <p>Styling:</p>
+
+        <img src="images/AND_selector_output_2.png">
+
+        <p>Output:</p>
+
+        <div class="yellow">Second Sentence: This sentence is only yellow but not underlined.</div>
+
+    </div>
+
+    <h2 class="subheading-text">Selecting element inside an element</h2>
+    <p>Suppose, there is a div inside a section and we have to apply certain styling on it, in this scenario we are
+        selecting an element inside an element. This can be done as follows:</p>
+
+    <p>"parent_selector child_selector"</p>
+
+    <p>We have to target the parent element first and after the parent the child element we want to select, in between
+        we have to write the space. Code example is given below along with the output:</p>
+
+    <h2 class="subheading-text">Descendant Selector</h2>
+
+    <img src="images/inside_element.png" alt="html code snippet">
+
+    <p>Styling:</p>
+
+    <img src="images/magenta_child.png" alt="">
+
+    <section>I am a section and parent of two divs.
+        <div>I am a child div.</div>
+        <div>I am another child div.</div>
+    </section>
+    <div>I am a div not a child of the section.</div>
+
+
+    <p>Descendant selectors are used to select the children of the parent.</p>
+    <p>We can easily see that the magenta color is only applied to the child elements and the div outside section is
+        unaffected.</p>
+
+    <h2 class="subheading-text">Child Selector</h2>
+    <p>Below code snippet is the structure of the parent child and grandchild classes.</p>
+    <img src="images/descendant_and_child_html.png">
+
+    <p>Child selectors are used to select the immediate child.</p>
+
+    <img src="images/child_selector.png">
+
+    <div class="parent">I am a parent.
+        <div class="child">I am first child.
+            <div class="grandchild">
+                I am grandchild.
+            </div>
+        </div>
+        <div class="child">I am second child.
+            <div class="grandchild">
+                I am another grandchild.
+            </div>
+        </div>
+    </div>
+
+    <p>We can see the above code is selecting the immediate child, i.e. first and second child of the parent and the
+        style is applied to them.</p>
+
+    <h2 class="subheading-text">Descendant Selector</h2>
+    <p>Descendant Selectors are used to select the descendants of the parent. The below code snippet will select the
+        child of child selector.
+    </p>
+
+    <img src="images/descendant_seletor.png">
+
+    <p>According to our css, the red color is applied to the</p>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+</body>
+
+</html>

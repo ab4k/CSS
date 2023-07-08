@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Universal Selector */
+        * {
+            background-color: #4d4d4d;
+        }
+
+        /* Individual Selector */
+        p {
+            background-color: #d1ea76;
+        }
+
+        /* Class and id selector */
+        .warning {
+            background-color: #ef9323;
+            color: #fff;
+        }
+
+        #danger {
+            background-color: #e93916;
+            color: #fff;
+        }
+
+        /* And selecter (chained) */
+
+        li.bg-black.text-white {
+            color: #ef9323;
+            background-color: #000;
+        }
+
+        /* Combined Selector */
+        span,
+        li {
+            background-color: #1dc9e7;
+        }
+
+        /* Inside an element */
+        div ul li {
+            background: #56ff34;
+        }
+
+        /* Direct Child */
+        div>li {
+            background-color: #a377;
+        }
+
+        /* Sibling ~ or + selector */
+        .sibling+p {
+            background-color: #330042;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Hey There</div>
+    <span>This is a span.</span>
+    <p>This is a paragraph.</p>
+
+    <ul>
+        <li>list 1</li>
+        <li class="warning">list 2</li>
+        <li id="danger">list 3</li>
+        <li class="bg-black text-white">list 4</li>
+        <li class="bg-black">list 5</li>
+    </ul>
+
+    <div>
+        <p>Lorem</p>
+        <li>awesome</li>
+        <ul>
+            <li>highlight me <a href="#">test</a></li>
+            <li>highlight me</li>
+        </ul>
+    </div>
+
+    <section>
+        <p class="sibling">Test 1</p>
+        <p>Test 2</p>
+        <p>Test 3</p>
+        <p class="sibling">Test 4</p>
+        <p>Test 5</p>
+    </section>
+</body>
+
+</html>

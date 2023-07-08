@@ -1,0 +1,49 @@
+div > p {
+  color: blue;
+}
+
+div ~ p {
+  background-color: yellow;
+}
+
+.fourth-para:hover {
+  background-color: grey;
+  color: greenyellow;
+}
+
+.fourth-para::before {
+  content: "Dood";
+  color: brown;
+  font-size: 25px;
+}
+
+.sampleQuote::after {
+  content: "-Random Person";
+  color: blueviolet;
+  font-size: 10px;
+}
+
+a:hover {
+  color: cyan;
+  background-color: #000000;
+}
+
+a:visited {
+  color: black;
+  background-color: peru;
+}
+
+p:hover {
+  color: red;
+  background-color: yellow;
+}
+
+input:focus {
+  color: orangered;
+  background-color: pink;
+}
+
+input[type="text"]:focus {
+  color: cyan;
+  background-color: green;
+}

@@ -1,0 +1,38 @@
+/* * {
+  background-color: #818181;
+  color: yellow;
+} */
+
+body {
+  /* background-image: url(./blurredBackground.jpg); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background: no-repeat center url(./blurredBackground.jpg);
+}
+
+h1 {
+  color: pink;
+}
+
+p {
+  color: goldenrod;
+  border-width: 2px;
+  border-style: dotted double solid dashed;
+  border-color: grey;
+  /* Margin & Padding */
+  margin: 10px;
+  padding: 20px 30px 40px 50px;
+  height: 100px;
+  width: 600px;
+  background-color: #fff;
+  /* text-align: center; */
+  text-align: justify;
+  /* text-decoration-line: underline; */
+  /* text-decoration-line: overline underline; */
+  text-decoration-line: underline line-through;
+}
+
+.para {
+  color: yellowgreen;
+}
